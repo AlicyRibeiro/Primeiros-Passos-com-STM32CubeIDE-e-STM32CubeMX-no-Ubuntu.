@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Introdução](README.md)
+* [Introdução](introducao.md)
 
 ## Instalação
 * [Download do IDE](instalacao/download.md)
