@@ -87,15 +87,3 @@ Se você aceitou todas as opções durante a instalação via terminal, o Ubuntu
     ⚠️ Nota para Usuários de Ubuntu Moderno:
     Se o ícone não aparecer imediatamente, tente reiniciar sua sessão (Log out e Log in). O sistema às vezes precisa desse "refresh" para indexar o novo atalho criado pelo instalador.
 
-
-
-
----
-
-# 🔗 Links de Apoio
-
-- [Guia Original (LinkedIn)](https://www.linkedin.com/pulse/how-download-install-stm32cubeide-ubuntu-jos%C3%A9-manuel-barajas-ram%C3%ADrez-t2rwc/)
-
-- [Tutorial BluePill (Eletrogate)](https://blog.eletrogate.com/bluepill-com-stm32cubeide/)
-
-- [Vídeo Auxiliar de Instalação]()
