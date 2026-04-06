@@ -3,8 +3,8 @@
 * [🌟 Introdução](introducao.md)
 
 ## 📥 Instalação
-* [Download do IDE](instalacao/download.md)
-* [Executando o Instalador](instalacao/script-sh.md)
+* [Download e Instalção do IDE](instalacao/download.md)
+* [Instalando o STM32CubeMX](instalacao/STM32CubeMX.md)
 
 ## ⚙️ Configuração de Ambiente
 * [Permissões USB (udev rules)](configuracao/udev-rules.md)
