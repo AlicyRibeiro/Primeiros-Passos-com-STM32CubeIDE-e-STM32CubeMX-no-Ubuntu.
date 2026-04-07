@@ -1,4 +1,3 @@
-# Introdução
 
 A STM32F103C8T6, popularmente conhecida através da placa Blue Pill, é uma das opções mais acessíveis e utilizadas para quem deseja iniciar no desenvolvimento de sistemas embarcados com microcontroladores ARM.
 
