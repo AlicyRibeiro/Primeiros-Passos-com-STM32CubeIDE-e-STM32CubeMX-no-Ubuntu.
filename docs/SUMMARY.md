@@ -13,8 +13,10 @@
 * [Primeiro Blink (PC13)](pratica/blink-led.md)
 
 
-## 🛠️ Solução de Problemas 
+## 🛠️ Solução de Problemas
+* [Soluções](erros/solucao.md)
 * [Interface: Tela Branca ou Vazia (Wayland)](erros/erro-interface.md)
 * [Conexão: ST-Link e Permissões USB](erros/permissoes-usb.md)
 * [IDE: Bug do Arquivo Assembly (.s)](erros/bug-assembly.md)
 * [Arquivos: O arquivo .ioc não abre o gráfico](erros/abrir-ioc.md)
+
