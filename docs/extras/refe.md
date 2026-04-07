@@ -6,6 +6,7 @@ Algumas referências úteis incluem:
 
 * [Documentação oficial da STMicroelectronics](https://github.com/AlicyRibeiro/Guia-Instalacao-stm32/tree/main/Material%20sobre%20o%20STM32f103c8-20260401)
 * [Tutoriais da Eletrogate](https://blog.eletrogate.com/bluepill-com-stm32cubeide/)
+* [Materiais do site DeepBlueEmbedded](https://deepbluembedded.com/stm32-gpio-write-pin-digital-output-lab/)
 * [Fóruns e discussões da comunidade STM32](https://www.linkedin.com/pulse/how-download-install-stm32cubeide-ubuntu-jos%C3%A9-manuel-barajas-ram%C3%ADrez-t2rwc/)
 * [Vídeo Auxiliar de Instalação](https://www.youtube.com/watch?v=6zpMXbjjNs8)
     
