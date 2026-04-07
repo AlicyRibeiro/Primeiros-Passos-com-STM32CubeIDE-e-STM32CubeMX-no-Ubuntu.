@@ -85,3 +85,8 @@ Se você prefere não usar o terminal, pode fazer o processo manualmente como eu
 4. **Executar:** Feche a janela de propriedades e dê um duplo clique no arquivo (ou clique com o botão direito e selecione "Executar").
 
 **Nota:** Assim que você executar (por qualquer um dos métodos), a janela de instalação oficial da ST será aberta. Basta seguir o assistente (Next/Avançar), aceitar os termos e escolher a pasta de destino.
+
+Após a instalação o cubeMX ira aparecer na gaveta de aplicativos, essa será sua tela inicial
+
+![Tela incial do STM32CubeMX ](../imagens/mx_pronto.png)
+
