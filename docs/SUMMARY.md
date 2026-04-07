@@ -1,9 +1,9 @@
 # Table of contents
 
-* [Introdução](introducao.md)
+* [Introdução](Introdução.md)
 
 ## 📥 Instalação
-* [Download e Instalção do IDE](instalacao/Download.md)
+* [Download e Instalção do IDE](docs/instalacao/Download.md)
 * [Instalando o STM32CubeMX](instalacao/STM32CubeMX.md)
 
 
