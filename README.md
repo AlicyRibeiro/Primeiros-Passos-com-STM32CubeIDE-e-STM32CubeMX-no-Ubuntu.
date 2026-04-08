@@ -1,4 +1,4 @@
-# 🛠️ Guia de Instalação STM32CubeIDE no Ubuntu
+# 🛠️ Guia de Instalação STM32CubeIDE STM32CubeMX no Ubuntu.
 
 Este repositório contém um guia passo a passo para instalar e configurar o ambiente de desenvolvimento STM32CubeIDE em sistemas Linux (Ubuntu), focado na placa Blue Pill (STM32F103C8T6).
 
