@@ -22,6 +22,7 @@ Os arquivos gerados pelo CubeMX possuem áreas especiais marcadas com comentári
 
 Essas regiões existem justamente para que você possa adicionar seu código sem correr o risco de perdê-lo quando o projeto for regenerado.
 
+
 Exemplo:
 
 ```c
@@ -32,6 +33,10 @@ HAL_GPIO_WritePin(GPIOC, GPIO_PIN_13, GPIO_PIN_RESET);
 
 Sempre que precisar adicionar variáveis, funções, inicializações ou lógica da aplicação, utilize essas áreas.
 
+
+![Regiões USER CODE dentro do arquivo main.c](a../imagens/user-code-regions.png)
+
+*Exemplo de regiões reservadas para o usuário dentro do arquivo `main.c`.*
 
 ---
 
@@ -90,13 +95,6 @@ Essa é uma das práticas mais importantes no início, porque evita perder traba
 > ⚠️ Nunca escreva código fora das regiões `USER CODE BEGIN` e `USER CODE END`, pois ele pode ser perdido ao regenerar o projeto.
 
 
-
-
-
-
-![Regiões USER CODE dentro do arquivo main.c](a../imagens/user-code-regions.png)
-
-*Exemplo de regiões reservadas para o usuário dentro do arquivo `main.c`.*
 
 ![Exemplo de USER CODE BEGIN 2](../imagens/user-code-begin-2.png)
 
