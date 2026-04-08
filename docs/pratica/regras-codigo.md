@@ -94,14 +94,14 @@ Essa é uma das práticas mais importantes no início, porque evita perder traba
 
 
 
-![Regiões USER CODE dentro do arquivo main.c](assets/images/user-code-regions.png)
+![Regiões USER CODE dentro do arquivo main.c](a../imagens/user-code-regions.png)
 
 *Exemplo de regiões reservadas para o usuário dentro do arquivo `main.c`.*
 
-![Exemplo de USER CODE BEGIN 2](assets/images/user-code-begin-2.png)
+![Exemplo de USER CODE BEGIN 2](../imagens/user-code-begin-2.png)
 
 *Trecho seguro para adicionar inicializações e configurações após o setup do hardware.*
 
-![Exemplo de código fora da região USER CODE](assets/images/codigo-apagado.png)
+![Exemplo de código fora da região USER CODE](../imagens/codigo-apagado.png)
 
 *Código escrito fora das regiões reservadas pode ser apagado quando o CubeMX gerar novamente o projeto.*
