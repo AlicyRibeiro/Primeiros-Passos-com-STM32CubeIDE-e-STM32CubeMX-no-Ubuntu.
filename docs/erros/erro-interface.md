@@ -17,22 +17,25 @@ Esse comportamento costuma estar relacionado ao backend gráfico utilizado pelo 
 
 ## Solução
 
-Execute a IDE forçando o uso do X11 com o comando:
+1. Execute a IDE forçando o uso do `X11` com o comando:
 
+```
 GDK_BACKEND=x11 stm32cubeide
+```
 
-Se a IDE não estiver no PATH, use o caminho completo do executável.
+2. Se a IDE não estiver no PATH, use o caminho completo do executável.
+3. Também pode ser interessante ajustar o atalho de inicialização para sempre abrir dessa forma.
+4. Ícones e interface muito pequenos
+5. Em monitores com alta resolução, como telas 2K ou 4K, alguns elementos da STM32CubeIDE podem ficar muito pequenos, dificultando a leitura.
 
-Também pode ser interessante ajustar o atalho de inicialização para sempre abrir dessa forma.
+---
 
-Ícones e interface muito pequenos
-
-Em monitores com alta resolução, como telas 2K ou 4K, alguns elementos da STM32CubeIDE podem ficar muito pequenos, dificultando a leitura.
-
-Solução
+## Solução
 
 Edite o arquivo stm32cubeide.ini e ajuste a escala da interface. Você pode adicionar ou alterar um parâmetro como:
 
+```
 -Dswt.autoScale=200
+```
 
-O valor pode variar conforme a necessidade. Em alguns casos, 150 ou 175 já melhora bastante.
+O valor pode variar conforme a necessidade. Em alguns casos, `150` ou `175`já melhora bastante.
