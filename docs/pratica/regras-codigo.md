@@ -33,20 +33,9 @@ HAL_GPIO_WritePin(GPIOC, GPIO_PIN_13, GPIO_PIN_RESET);
 
 Sempre que precisar adicionar variáveis, funções, inicializações ou lógica da aplicação, utilize essas áreas.
 
+![Regiões USER CODE dentro do arquivo main.c](../imagens/user-code-regions.png)
 
-![Regiões USER CODE dentro do arquivo main.c](a../imagens/user-code-regions.png)
-
-*Exemplo de regiões reservadas para o usuário dentro do arquivo `main.c`.*
-
----
-
-## O que pode acontecer se você escrever fora dessas regiões
-
-Se você escrever código fora das áreas `USER CODE`, o CubeMX pode apagar esse trecho quando gerar novamente o projeto.
-
-Isso acontece porque o software entende que todo o restante do arquivo pertence à estrutura automática do projeto.
-
-Por exemplo, se você adicionar uma função manualmente entre duas partes geradas pelo CubeMX, ela pode desaparecer na próxima atualização.
+*Figura 1. Exemplo de várias regiões `USER CODE BEGIN` e `USER CODE END` dentro do arquivo `main.c`.*
 
 
 ---
@@ -84,6 +73,17 @@ Nesse exemplo, o LED conectado ao PC13 muda de estado a cada 500 ms.
 
 ---
 
+## O que pode acontecer se você escrever fora dessas regiões
+
+Se você escrever código fora das áreas `USER CODE`, o CubeMX pode apagar esse trecho quando gerar novamente o projeto.
+
+Isso acontece porque o software entende que todo o restante do arquivo pertence à estrutura automática do projeto.
+
+Por exemplo, se você adicionar uma função manualmente entre duas partes geradas pelo CubeMX, ela pode desaparecer na próxima atualização.
+
+
+---
+
 ## Boa prática
 
 Antes de escrever qualquer código em um projeto STM32, procure primeiro uma região `USER CODE BEGIN` apropriada.
@@ -94,12 +94,3 @@ Essa é uma das práticas mais importantes no início, porque evita perder traba
 
 > ⚠️ Nunca escreva código fora das regiões `USER CODE BEGIN` e `USER CODE END`, pois ele pode ser perdido ao regenerar o projeto.
 
-
-
-![Exemplo de USER CODE BEGIN 2](../imagens/user-code-begin-2.png)
-
-*Trecho seguro para adicionar inicializações e configurações após o setup do hardware.*
-
-![Exemplo de código fora da região USER CODE](../imagens/codigo-apagado.png)
-
-*Código escrito fora das regiões reservadas pode ser apagado quando o CubeMX gerar novamente o projeto.*
