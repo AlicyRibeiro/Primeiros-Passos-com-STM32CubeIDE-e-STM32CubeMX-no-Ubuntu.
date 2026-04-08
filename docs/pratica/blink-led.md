@@ -12,7 +12,7 @@ Neste exemplo, o pino **PC13** será configurado como saída digital para contro
 
 Ao final, o programa fará o LED alternar entre ligado e desligado em um intervalo fixo.
 
-![Tela inicial do projeto na STM32CubeIDE](assets/images/blink/tela-inicial-projeto.png)
+![Tela inicial do projeto na STM32CubeIDE](../imagens/tela-inicial-projeto.png)
 
 *Figura 1. Tela inicial da STM32CubeIDE para criação de um novo projeto.*
 
@@ -29,7 +29,7 @@ Antes de escrever o código, é necessário configurar o projeto.
 
 Abra a STM32CubeIDE e inicie um novo projeto STM32. Em seguida, selecione o microcontrolador da placa e avance para a tela de configuração. No material da Eletrogate, o projeto foi iniciado buscando o alvo **STM32F103C6T6A** no seletor da IDE. ([Blog Eletrogate][1])
 
-![Seleção do microcontrolador no início do projeto](assets/images/blink/selecao-microcontrolador.png)
+![Seleção do microcontrolador no início do projeto](../imagensselecao-microcontrolador.png)
 
 *Figura 2. Seleção do microcontrolador ou da placa no assistente de criação do projeto.*
 
@@ -43,7 +43,7 @@ Na seção **SYS**, defina:
 
 Essas opções aparecem no passo a passo mostrado pela Eletrogate para a configuração inicial do projeto. ([Blog Eletrogate][1])
 
-![Configuração da seção SYS](assets/images/blink/config-sys.png)
+![Configuração da seção SYS](../imagens/config-sys.png)
 
 *Figura 3. Configuração da seção SYS com Serial Wire e SysTick.*
 
@@ -57,7 +57,7 @@ Na seção **RCC**, selecione:
 
 Depois, na aba **Clock Configuration**, ajuste a fonte do PLL e o clock do sistema. No exemplo da Eletrogate, o fluxo usa **HSE** como fonte do PLL e **PLLCLK** como clock do sistema. ([Blog Eletrogate][1])
 
-![Configuração do clock no CubeMX](assets/images/blink/config-clock.png)
+![Configuração do clock no CubeMX](../imagens/config-clock.png)
 
 *Figura 4. Ajuste do clock do sistema na aba Clock Configuration.*
 
@@ -67,7 +67,7 @@ Depois, na aba **Clock Configuration**, ajuste a fonte do PLL e o clock do siste
 
 No campo **Pinout View**, clique no pino **PC13** e selecione a função **GPIO_Output**. O tutorial da Eletrogate usa exatamente esse pino para o exemplo do LED e também sugere atribuir um rótulo ao pino para facilitar a leitura do código gerado. ([Blog Eletrogate][1])
 
-![Configuração do PC13 como GPIO\_Output](assets/images/blink/config-pc13.png)
+![Configuração do PC13 como GPIO\_Output](../imagens/config-pc13.png)
 
 *Figura 5. Configuração do pino PC13 como saída digital.*
 
@@ -77,7 +77,7 @@ No campo **Pinout View**, clique no pino **PC13** e selecione a função **GPIO_
 
 Depois de concluir as configurações, salve o projeto para gerar automaticamente os arquivos. A Eletrogate mostra que, ao salvar, a IDE pergunta se o código deve ser criado, e o CubeMX gera toda a estrutura inicial necessária para o projeto. ([Blog Eletrogate][1])
 
-![Janela de geração de código](assets/images/blink/geracao-codigo.png)
+![Janela de geração de código](../imagens/geracao-codigo.png)
 
 *Figura 6. Janela de geração automática do código do projeto.*
 
@@ -97,7 +97,7 @@ while (1)
 }
 ```
 
-![Trecho do main.c com o código do blink](assets/images/blink/codigo-blink-main.png)
+![Trecho do main.c com o código do blink](../imagens/codigo-blink-main.png)
 
 *Figura 7. Código do blink inserido no `while (1)` do arquivo `main.c`.*
 
@@ -134,7 +134,7 @@ while (1)
 
 As duas abordagens servem para o mesmo objetivo. Para um primeiro teste, a versão com `HAL_GPIO_TogglePin()` costuma ser mais simples.
 
-![Exemplo alternativo com HAL\_GPIO\_WritePin](assets/images/blink/codigo-writepin.png)
+![Exemplo alternativo com HAL\_GPIO\_WritePin](../imagens/codigo-writepin.png)
 
 *Figura 8. Alternativa usando `HAL_GPIO_WritePin()` para controlar o LED.*
 
@@ -156,7 +156,7 @@ while (1)
 }
 ```
 
-![Região USER CODE dentro do while](assets/images/blink/user-code-while.png)
+![Região USER CODE dentro do while](../imagens/user-code-while.png)
 
 *Figura 9. Região correta para inserir a lógica do blink no `main.c`.*
 
@@ -210,7 +210,7 @@ Esse é um dos testes mais importantes do início, porque confirma que:
 * a geração de código funcionou;
 * a placa está executando o programa.
 
-![Resultado esperado do blink na placa](assets/images/blink/resultado-blink.png)
+![Resultado esperado do blink na placa](../imagens/resultado-blink.png)
 
 *Figura 10. Resultado esperado após a gravação do programa na placa.*
 
@@ -229,7 +229,7 @@ Normalmente, basta:
 
 Depois da primeira configuração, a IDE costuma reutilizar essas opções automaticamente nas próximas execuções.
 
-![Janela de configuração de debug da STM32CubeIDE](assets/images/blink/config-debug.png)
+![Janela de configuração de debug da STM32CubeIDE](../imagens/config-debug.png)
 
 *Figura 10. Janela de configuração de debug exibida na primeira execução do projeto.*
 
