@@ -1,6 +1,0 @@
-{
-  "name": "Guia STM32 no Ubuntu",
-  "description": "Guia de Instalação STM32CubeIDE e STM32CubeMX no Ubuntu, fluxo de trabalho e primeiros passos com a Blue Pill.",
-  "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
-}
