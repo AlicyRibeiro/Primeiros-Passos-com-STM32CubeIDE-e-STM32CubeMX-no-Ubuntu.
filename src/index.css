@@ -1,0 +1,140 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  }
+
+  code, pre, kbd {
+    font-family: 'Fira Code', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  }
+}
+
+/* Custom delicate scrollbars matching GitBook */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(148, 163, 184, 0.3);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(148, 163, 184, 0.5);
+}
+
+/* Prism.js Syntax Highlighting for Code Blocks (C, CLI/Bash, ARM Assembly, etc.) */
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+  color: #64748b;
+  font-style: italic;
+}
+
+.token.punctuation {
+  color: #94a3b8;
+}
+
+.token.namespace {
+  opacity: 0.7;
+}
+
+.token.property,
+.token.tag,
+.token.boolean,
+.token.number,
+.token.constant,
+.token.symbol,
+.token.deleted {
+  color: #fb923c;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+  color: #4ade80;
+}
+
+.token.operator,
+.token.entity,
+.token.url {
+  color: #38bdf8;
+}
+
+.token.atrule,
+.token.attr-value,
+.token.keyword {
+  color: #c084fc;
+  font-weight: 600;
+}
+
+.token.function,
+.token.class-name {
+  color: #60a5fa;
+  font-weight: 500;
+}
+
+.token.regex,
+.token.important,
+.token.variable {
+  color: #fb7185;
+}
+
+/* CLI / Bash specific highlighting */
+.language-bash .token.function {
+  color: #38bdf8;
+  font-weight: 600;
+}
+
+.language-bash .token.parameter {
+  color: #facc15;
+}
+
+.language-bash .token.assign-left {
+  color: #f472b6;
+}
+
+/* C language specific enhancements */
+.language-c .token.macro,
+.language-c .token.directive,
+.language-c .token.directive-hash {
+  color: #c084fc;
+  font-weight: 600;
+}
+
+.language-c .token.constant {
+  color: #f87171;
+  font-weight: 600;
+}
+
+.language-c .token.keyword {
+  color: #a855f7;
+}
+
+.language-c .token.function {
+  color: #60a5fa;
+}
+
+/* ARM Assembly */
+.language-armasm .token.instruction {
+  color: #38bdf8;
+  font-weight: 600;
+}
+
+.language-armasm .token.register {
+  color: #fbbf24;
+}
+

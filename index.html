@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guia de Instalação STM32CubeIDE no Ubuntu</title>
+    <meta name="description" content="Guia de Instalação STM32CubeIDE e STM32CubeMX no Ubuntu, fluxo de trabalho e primeiros passos com a Blue Pill." />
+    <meta property="og:title" content="Guia de Instalação STM32CubeIDE no Ubuntu" />
+    <meta property="og:description" content="Guia de Instalação STM32CubeIDE e STM32CubeMX no Ubuntu, fluxo de trabalho e primeiros passos com a Blue Pill." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+      (function() {
+        try {
+          var savedTheme = localStorage.getItem('stm32_theme');
+          if (savedTheme === 'dark') {
+            document.documentElement.classList.add('dark');
+            document.documentElement.style.colorScheme = 'dark';
+          } else {
+            document.documentElement.classList.remove('dark');
+            document.documentElement.style.colorScheme = 'light';
+          }
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+  <body class="bg-white dark:bg-[#0b0f17] text-slate-800 dark:text-slate-100 antialiased selection:bg-blue-500/20 selection:text-blue-700 dark:selection:text-blue-300">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+
